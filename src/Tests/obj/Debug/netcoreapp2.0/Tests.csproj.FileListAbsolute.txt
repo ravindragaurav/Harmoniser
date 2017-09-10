@@ -1,0 +1,6 @@
+C:\Code\Harmoniser\src\Tests\bin\Debug\netcoreapp2.0\Tests.deps.json
+C:\Code\Harmoniser\src\Tests\bin\Debug\netcoreapp2.0\Tests.dll
+C:\Code\Harmoniser\src\Tests\obj\Debug\netcoreapp2.0\Tests.csprojResolveAssemblyReference.cache
+C:\Code\Harmoniser\src\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+C:\Code\Harmoniser\src\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+C:\Code\Harmoniser\src\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
