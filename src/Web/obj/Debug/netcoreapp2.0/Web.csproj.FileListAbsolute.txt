@@ -3,7 +3,6 @@ C:\Code\Harmoniser\src\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.json
 C:\Code\Harmoniser\src\Web\bin\Debug\netcoreapp2.0\Web.runtimeconfig.dev.json
 C:\Code\Harmoniser\src\Web\bin\Debug\netcoreapp2.0\Web.dll
 C:\Code\Harmoniser\src\Web\bin\Debug\netcoreapp2.0\Web.pdb
-C:\Code\Harmoniser\src\Web\obj\Debug\netcoreapp2.0\Web.csprojResolveAssemblyReference.cache
 C:\Code\Harmoniser\src\Web\obj\Debug\netcoreapp2.0\Web.csproj.CoreCompileInputs.cache
 C:\Code\Harmoniser\src\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfoInputs.cache
 C:\Code\Harmoniser\src\Web\obj\Debug\netcoreapp2.0\Web.AssemblyInfo.cs
