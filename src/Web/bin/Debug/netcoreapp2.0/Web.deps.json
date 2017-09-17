@@ -10,7 +10,7 @@
       "NETCOREAPP2_0"
     ],
     "languageVersion": "",
-    "platform": "",
+    "platform": "AnyCPU",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,

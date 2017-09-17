@@ -1,12 +1,13 @@
-﻿using Web.Business;
-using Xunit;
+﻿using NUnit.Framework;
+using Web.Business;
 
-namespace Tests.Business
+namespace Tests
 {
+    [TestFixture]
     public class ChordLogicTests
     {
-        [Fact]
-        public void shouldGetChordBasedOnSoprano()
+        [Test]
+        public void ShouldGetChordBasedOnSoprano()
         {
             //Given
             ChordLogic logic = new ChordLogic();
@@ -15,11 +16,10 @@ namespace Tests.Business
             var chord = logic.GetChord('C');
 
             //Then
-            Assert.Equal(chord.Soparano, 'C');
-            Assert.Equal(chord.Alto, 'E');
-            Assert.Equal(chord.Tenor, 'G');
-            Assert.Equal(chord.Bass, 'C');
+            Assert.That(chord.Soparano,Is.EqualTo( 'C'));
+            Assert.That(chord.Alto, Is.EqualTo('E'));
+            Assert.That(chord.Tenor, Is.EqualTo('G'));
+            Assert.That(chord.Bass, Is.EqualTo('C'));
         }
-
     }
 }
