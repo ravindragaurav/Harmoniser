@@ -29,6 +29,15 @@ namespace Web.Controllers
             return View();
         }
 
+        public IActionResult Harmoniser()
+        {
+            ViewData["Message"] = "Harmoniser";
+            ViewData["AnotherMessage"] = "Another Harmoniser";
+
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
