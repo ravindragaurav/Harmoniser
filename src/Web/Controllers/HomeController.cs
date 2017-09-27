@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Web.Models;
+using Web.Business;
 
 namespace Web.Controllers
 {
@@ -33,10 +34,21 @@ namespace Web.Controllers
         {
             ViewData["Message"] = "Harmoniser";
             ViewData["AnotherMessage"] = "Another Harmoniser";
-
-
             return View();
         }
+
+        public JsonResult GetChord(char soprano)
+        {
+            ChordLogic logic = new ChordLogic();
+            var chord = logic.GetChord(soprano);
+            //if (chord == null)
+            //{
+            //    return Json(string.Empty, JsonRequestBehavior.AllowGet);
+            //}
+            var result = Json(chord);
+            return result;
+        }
+
 
         public IActionResult Error()
         {

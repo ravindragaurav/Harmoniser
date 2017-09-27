@@ -12,7 +12,7 @@
         $.ajax({
             cache: false,
             type: 'GET',
-            url: '../Controllers/GetChord? chord = ' + chord,
+            url: '../Home/GetChord? chord = ' + chord,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (data) {
