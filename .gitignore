@@ -320,6 +320,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+src\Tests\bin
 
 # Visual Studio 2015
 .vs/
