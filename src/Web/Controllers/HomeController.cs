@@ -37,16 +37,15 @@ namespace Web.Controllers
             return View();
         }
 
-        public JsonResult GetChord(char soprano)
+        public JsonResult GetChord(string soprano)
         {
             ChordLogic logic = new ChordLogic();
-            var chord = logic.GetChord(soprano);
-            //if (chord == null)
-            //{
-            //    return Json(string.Empty, JsonRequestBehavior.AllowGet);
-            //}
-            var result = Json(chord);
-            return result;
+            var chord = logic.GetChord("C");
+            if (chord == null)
+            {
+                return Json("did not return anything");
+            }
+            return Json(chord);
         }
 
 

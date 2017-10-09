@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Content Include="Scripts\Harmoniser.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
 

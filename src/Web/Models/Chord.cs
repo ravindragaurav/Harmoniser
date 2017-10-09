@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Web.Models
+﻿namespace Web.Models
 {
     public class Chord
     {
-        public char Soparano { get; set; }
-        public char Alto { get; set; }
-        public char Tenor { get; set; }
-        public char Bass { get; set; }
+        public string Soparano { get; set; }
+        public string Alto { get; set; }
+        public string Tenor { get; set; }
+        public string Bass { get; set; }
     }
 }

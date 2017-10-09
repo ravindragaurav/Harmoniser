@@ -2,22 +2,22 @@
     wireUpButton();
 
     function wireUpButton() {
-        var button = $('#button');
+        var button = $('#getHarmonies');
         button.click(function () {
-            getChords('C');
+            clearPage();
+            getChords($('#soprano').val());
         });
     }
 
-    function getChords(chord) {
+    function getChords(soprano) {
         $.ajax({
             cache: false,
             type: 'GET',
-            url: '../Home/GetChord? chord = ' + chord,
+            url: '../Home/GetChord?chord'+soprano,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (data) {
                 //if data is null, do something
-                alert(data);
                 fillChord(data);
             },
             error: function () {
@@ -25,7 +25,19 @@
             }
         });
     }
-    
+
+    function fillChord(chord) {
+        $('#alto').val(chord.alto) ;
+        $('#tenor').val(chord.tenor);
+        $('#bass').val(chord.bass);
+    };
+
+    function clearPage()
+    {
+        $('#alto').val("");
+        $('#tenor').val("");
+        $('#bass').val("");
+    }
 });
 
 

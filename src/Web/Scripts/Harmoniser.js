@@ -2,9 +2,9 @@
     wireUpButton();
 
     function wireUpButton() {
-        var button = $('#button');
+        var button = $('#getHarmonies');
         button.click(function () {
-            getChords('C');
+            getChords($('#soprano').val());
         });
     }
 
@@ -12,7 +12,7 @@
         $.ajax({
             cache: false,
             type: 'GET',
-            url: '../Controllers/GetChord? chord = ' + chord,
+            url: '../Home/GetChord? chord = ' + chord,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (data) {
@@ -25,7 +25,13 @@
             }
         });
     }
-    
+
+    function fillChord(chord) {
+
+        $('#alto').val() = chord.alto;
+        $('#tenor').val() = chord.tenor;
+        $('#bass').val() = chord.bass;
+        };
 });
 
 

@@ -6,10 +6,10 @@ namespace Tests
     [TestFixture]
     public class ChordLogicTests
     {
-        [TestCase('C', 'G', 'E', 'C')]
-        [TestCase('F', 'C', 'A', 'F')]
-        [TestCase('G', 'D', 'B', 'G')]
-        public void ShouldGetChordBasedOnSoprano(char soparano, char alto, char tenor, char bass)
+        [TestCase("C", "G", "E", "C")]
+        [TestCase("F", "C", "A", "F")]
+        [TestCase("G", "D", "B", "G")]
+        public void ShouldGetChordBasedOnSoprano(string soparano, string alto, string tenor, string bass)
         {
             //Given
             ChordLogic logic = new ChordLogic();
