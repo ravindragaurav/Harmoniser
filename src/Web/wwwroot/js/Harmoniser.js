@@ -13,7 +13,7 @@
         $.ajax({
             cache: false,
             type: 'GET',
-            url: '../Home/GetChord?chord'+soprano,
+            url: '../Home/GetChord?soprano='+soprano,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (data) {
