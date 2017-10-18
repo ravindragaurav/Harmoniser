@@ -40,7 +40,7 @@ namespace Web.Controllers
         public JsonResult GetChord(string soprano)
         {
             ChordLogic logic = new ChordLogic();
-            var chord = logic.GetChord("C");
+            var chord = logic.GetChord(soprano);
             if (chord == null)
             {
                 return Json("did not return anything");
