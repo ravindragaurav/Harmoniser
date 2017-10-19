@@ -1,11 +1,11 @@
-﻿$(function () {
+$(function () {
     wireUpButton();
 
     function wireUpButton() {
         var button = $('#getHarmonies');
         button.click(function () {
             clearPage();
-            getChords($('#soprano').val());
+            getChords($('#chord').val());
         });
     }
 
