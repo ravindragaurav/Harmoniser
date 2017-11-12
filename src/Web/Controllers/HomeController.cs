@@ -11,6 +11,7 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
+        private Recorder recorder;
         public IActionResult Index()
         {
             return View();
@@ -32,6 +33,7 @@ namespace Web.Controllers
 
         public IActionResult Harmoniser()
         {
+            
             ViewData["Message"] = "Harmoniser";
             ViewData["AnotherMessage"] = "Another Harmoniser";
             return View();
@@ -46,6 +48,17 @@ namespace Web.Controllers
                 return Json("did not return anything");
             }
             return Json(chord);
+        }
+
+        public void StartRecording()
+        {
+            recorder = new Recorder();
+            recorder.start();
+        }
+
+        public void StopRecording()
+        {
+            recorder.stop();
         }
 
 

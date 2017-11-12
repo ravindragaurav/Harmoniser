@@ -1,5 +1,7 @@
 $(function () {
     wireUpButton();
+    wireUpStartButton()
+    wireUpStopButton()
 
     function wireUpButton() {
         var button = $('#getHarmonies');
@@ -8,6 +10,46 @@ $(function () {
             getChords($('#chord').val());
         });
     }
+
+    function wireUpStartButton() {
+        var button = $('#startRecording');
+        button.click(function () {
+            alert('recording');
+            console.log('recording');
+            startRecording();
+        });
+    }
+
+    function wireUpStopButton() {
+        var button = $('#stopRecording');
+        button.click(function () {
+            console.log('stopping');
+            stopRecording();
+        });
+    }
+
+    function startRecording() {
+        $.ajax({
+            cache: false,
+            type: 'GET',
+            url: '../Home/StartRecording',
+            error: function () {
+
+            }
+        });
+    } 
+
+    function stopRecording() {
+        $.ajax({
+            cache: false,
+            type: 'GET',
+            url: '../Home/StopRecording',
+            error: function () {
+
+            }
+        });
+    } 
+
 
     function getChords(soprano) {
         $.ajax({
